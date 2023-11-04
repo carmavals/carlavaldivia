@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+}
+h1{
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+    font-size: 90px;
+   
+}
+h2{
+    display: inline-block;
+    padding: 0 0 0 31rem;
+  /* background-color: aqua; */
+    font-size: 40px;
+    position: relative;
+    bottom: 22px;
+}
+span{
+    font-size: 30px;
+}
+nav{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 7rem 0 0 0;
+    overflow: hidden;
+    position: static;
+
+  
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem 2rem 0 0;
+    overflow: hidden;
+    float: right;
+    font-size: 20px;
+    
+}
+li{
+    float: left;
+    padding: 1rem;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+section{
+    color: white;
+    display: inline-block; 
+    color: white;
+    width: 100%;
+    align-self: center;
+    padding: 10%;
+}
+
+.sobre_mi, .obras{
+    display: inline-block; 
+    color: white;
+    width: 100%;
+    align-self: center;
+    padding: 10%;
+
+}
+
+.sobre_mi p{
+    font-size: 23px;
+}
+.galeria_fotos div{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+
+    /* width: 80%; */
+    padding: 10%;
+}
+.galeria_fotos div div, .obras div div, .libro div{ 
+    
+width: 40rem;
+height: 40rem;
+background-color: white;
+margin: 1rem;
+padding: 1rem;
+color: black;
+
+
+}
+
+.poesia div{
+    display: flex;
+}
+
+.poesia span {
+    font-size: 30px;
+}
+    
+.poesia div{
+   font-size: 20px; 
+}
+.contacto img{
+    padding: 5px;
+    width: 3rem;
+}
