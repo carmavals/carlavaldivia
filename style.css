@@ -54,8 +54,29 @@ li a{
     color: white;
     text-align: center;
     text-decoration: none;
+    width: 8rem;
+    height: 2rem;
+    
 
 }
+
+li a:hover{
+    background-color: rgb(72, 71, 71);
+    color: black;
+}
+
+nav li ul{
+    display: none;
+
+}
+
+nav li:hover >ul {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
 
 section{
     color: white;
@@ -66,6 +87,14 @@ section{
     padding: 10%;
 }
 
+.sobre_mi{
+    padding: 3rem;
+}
+.sobre_mi div{
+    display: flex;
+    flex-direction: row;
+    
+}
 .sobre_mi, .obras{
     display: inline-block; 
     color: white;
@@ -76,7 +105,13 @@ section{
 }
 
 .sobre_mi p{
-    font-size: 23px;
+    font-size: 30px;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.sobre_mi span{
+    font-size: 32px;
+    padding: 1rem;
 }
 .galeria_fotos div{
     display: grid;
@@ -112,4 +147,9 @@ color: black;
 .contacto img{
     padding: 5px;
     width: 3rem;
+}
+
+.caricatura{
+    min-width: 45%;
+    height: 50rem;
 }
