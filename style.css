@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;800;900&display=swap');
+:root{
+    --coolor-de-fondo: rgb(226, 223, 223); 
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: black;
+    background-color: var(--coolor-de-fondo);
 }
-h1{
+header h1{
     display: inline-block;
-    margin: auto;
-    padding: auto;
-    font-size: 90px;
+     margin: auto; 
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 50px;
+    text-align: left;
+    
    
 }
 h2{
@@ -24,73 +29,128 @@ h2{
 span{
     font-size: 30px;
 }
-nav{
-    background-color: black;
-    width: 100%;
-    /* height: max-content; */
-    color: white;
-    margin: 0;
-    padding: 1rem 0 0 0;
-    /* overflow: hidden; */
-    position: fixed;
-
-  
-}
-nav .ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 2rem 2rem 0 0;
-    overflow: hidden;
-    float: right;
-    font-size: 20px;
+.header{
+    /* width: 100%; */
+    height: 21rem;
     
 }
+.navbar{
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   position: relative;
+   bottom: 8rem;
+}
+.menu_hamburguesa{
+    display: none;
+}
+nav .ul{
+    width: 100%;
+    position: absolute;
+    top: 13rem;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.segundo_menu{
+    position: absolute;
+    top: 2rem;
+    text-align: left;
+    left: 32rem; 
+    list-style: none;
+    
+}
+
+.tercer_menu{
+    position: absolute;
+    top: 3.5rem;
+    text-align: left;
+    left: 32rem; 
+    list-style: none;
+}
 .li{
-    float: left;
-    padding: 1rem;
+     /* float: left;  */
+    padding: 5px;
 }
 .li .a{
     display: block;
-    color: white;
-    text-align: center;
+    color: black;
+    /* text-align: center; */
     text-decoration: none;
-    width: 8.5rem;
-    height: 2rem;
+    /* width: 8.5rem;
+    height: 2rem; */
     
 
 }
 
 .li .a:hover{
     background-color: rgb(72, 71, 71);
-    color: black;
+    color: var(--coolor-de-fondo);
 }
 
-nav .li .ul{
+nav .primer_ul{
+    display: none;
+    transition: all .3s;
+
+}
+
+nav .li .ul, .segundo_menu, .tercer_menu{
     display: none;
 
 }
 
-nav .li:hover >.ul {
+nav .li:hover >.segundo_menu {
     display: flex;
     flex-direction: column;
     
     
 }
 
+nav .li:hover > .tercer_menu{
+    display: flex;
+    flex-direction: column;
+}
 
+.list_icon{
+    cursor:pointer
+}
+
+.menu_hamburguesa:checked + .ul{
+    /* background-color: aqua; */
+    display: flex;
+}
+a{
+    padding: 3px;
+}
 section{
-    color: white;
+    display: flex;
+   
+    color: black;
     display: inline-block; 
-    color: white;
+    
     width: 100%;
     align-self: center;
-    padding: 10%;
+    padding: 5%;
 }
 
-.sobre_mi{
-   
-    padding: 3rem;
+section .info_imagen{
+    display: flex;
+    flex-direction: row;
+    
 }
+section h1{
+    font-size: 30px;
+}
+
+
+/* .sobre_mi{
+   NO VA
+    padding: 3rem;
+} */
 .sobre_mi div{
     display: flex;
     flex-direction: row;
@@ -98,22 +158,24 @@ section{
 }
 .sobre_mi, .obras{
     display: inline-block; 
-    color: white;
+    color: black;
     width: 100%;
     align-self: center;
     padding: 10%;
 
 }
 
+/* revisar */
 .sobre_mi p{
+
     display: inline-block;
-    width: 60%;
-    font-size: 29px;
-    padding: 3rem 1rem 1rem 1rem;
+    width: 90%;
+    font-size: 20px;
+    padding: 3rem 1rem 1rem 3rem;
 }
 
 .sobre_mi span{
-    font-size: 32px;
+    font-size: 25px;
     padding: 1rem;
 }
 .galeria_fotos div{
@@ -121,7 +183,7 @@ section{
     grid-template-columns: 2fr 2fr;
   grid-template-rows: 2fr 2fr;
 
-    /* width: 80%; */
+     width: 80%; 
     padding: 10%;
 }
 .galeria_fotos div div, .obras div div, .libro div{ 
@@ -153,26 +215,31 @@ color: black;
 }
 
 .caricatura{
-    min-width: 35%;
-    height: 40rem;
+    padding: 1rem;
+    min-width: 5%;
+    height: 5%;
 }
 
-.titulos_subtitulos h1{
+/* .titulos_subtitulos h1{
     padding: auto;
     display: inline-block;
     
-}
+} */
 
 .sobre_mi .titulos_subtitulos{
     display: flex;
  flex-direction: column;
+ padding: 0 2rem;
+ text-align: center;
 
 }
 .ficha_tecnica{
+    
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
+    padding:  5rem 1rem;
     
 }
 .ficha_tecnica ul li{
@@ -182,15 +249,71 @@ float: none;
 }
 
 .ficha_tecnica ul li a {
-    width: 50%;
+    width: 100%;
    height: 4rem;
    text-align: justify;
   text-decoration: underline;
-  color: white;
+  color: black;
   display: inline-block;
 
   padding: 2rem 0;
 }
 .ficha_tecnica h4{
-font-size: 25px;
+font-size: 20px;
+padding: 1rem;
+}
+
+
+
+    @media (min-width: 900px) {
+        .label_hamburguesa {
+            display: none;
+        }
+    
+        .header {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            
+        }
+    
+        .navbar {
+            
+            width: 100%;
+            justify-content: flex-start;
+            
+        }
+    
+        nav .primer_ul {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 1.5rem;
+            list-style: none;
+            padding: 1rem;
+            justify-content: right;
+            
+           
+        }
+    
+        header h1 {
+            font-size: 90px;
+            margin: 0;
+            position: relative;
+            top: 7rem;
+        }
+
+a{
+   padding: 1rem; 
+}
+
+.segundo_menu{
+    top: 4.5rem;
+    left: 72.5rem;
+}
+
+.tercer_menu{
+    top:4.5rem;
+    left: 80.5rem;
+}
 }

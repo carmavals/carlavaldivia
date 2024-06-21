@@ -10,22 +10,50 @@
 </head>
 
 <body>
-    <nav>
-        <h1>Carla Valdivia</h1>
-
-        <ul>
-            <li><a href="index.html">Sobre mí</a></li>
-            <li><a href="teatro.html">Teatro</a></li>
-            <li><a href="poesia.html">Poesía</a></li>
-            <li><a href="guion.html">Guión</a></li>
-            <li><a href="talleres.html">Talleres</a></li>
-            <li><a href="prensa.html">Prensa</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-
-        </ul>
-        <h2>teatro</h2>
-    </nav>
-
+    <header class="header">
+        <nav class="navbar">
+            <h1>Carla Valdivia</h1>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="30" 
+                height="30" 
+                fill="currentColor" 
+                class="list_icon" 
+                viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
+            <ul  class="ul primer_ul">
+                <li class="li"><a  class="a"href="index.html">Sobre mí</a></li>
+                <li class="li"><a  class="a"href="proyectos.html">Proyectos</a>
+                    <ul class="segundo_menu">
+                        <li class="li"><a  class="a"href="direccion.html">Dirección</a></li>
+                        <li class="li"><a  class="a"href="dramaturgia.html">Dramaturgia</a></li>
+                        <li class="li"><a  class="a"href="guion.html">Guión</a></li>
+                        <li class="li"><a  class="a"href="actuacion.html">Actuación</a></li>
+                        <li class="li"><a  class="a"href="poesia.html">Poesía</a></li>
+        
+                    </ul>
+                </li>
+               
+    
+                <li class="li"><a  class="a"href="lee.html">Lee mis textos</a>
+                    <ul class="tercer_menu">
+                        <li class="li"><a class="a" href="dramaturgia.html">Dramaturgia</a></li>
+                        <li class="li"><a class="a" href="poesia.html">Poesía</a></li>
+                    </ul>
+                </li>
+               
+    
+                <li class="li"><a class="a" href="talleres.html">Talleres</a></li>
+                <li class="li"><a class="a" href="prensa.html">Prensa</a></li>
+                <li class="li"><a class="a"href="contacto.html">Contacto</a></li>
+    
+            </ul>
+    
+        </nav>
+    </header>
     <section class="obras">
         <div>
             <span>Ofelia no estaba loca</span>
