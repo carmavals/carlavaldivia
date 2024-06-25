@@ -1,52 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;800;900&display=swap');
-:root{
-    --coolor-de-fondo: rgb(226, 223, 223); 
+
+:root {
+    --coolor-de-fondo: rgb(226, 223, 223);
+    --color-de-body: rgb(197, 195, 195);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: var(--coolor-de-fondo);
+    background-color: var(--color-de-body);
 }
-header h1{
+
+header h1 {
     display: inline-block;
-     margin: auto; 
+    margin: auto;
     padding: 1rem 1rem 1rem 1rem;
     font-size: 50px;
     text-align: left;
-    
-   
+    background-color: var(--coolor-de-fondo);
+
+
+
 }
-h2{
+
+h2 {
     display: inline-block;
     padding: 0 0 0 31rem;
-  /* background-color: aqua; */
+    /* background-color: aqua; */
     font-size: 40px;
     position: relative;
     bottom: 22px;
 }
-span{
+
+span {
     font-size: 30px;
 }
-.header{
+
+.header {
     /* width: 100%; */
     height: 21rem;
-    
+    background-color: var(--coolor-de-fondo);
+
+
+
 }
-.navbar{
-   height: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-   position: relative;
-   bottom: 8rem;
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 7rem;
+    background-color: var(--coolor-de-fondo);
 }
-.menu_hamburguesa{
+
+.menu_hamburguesa {
     display: none;
 }
-nav .ul{
+
+nav .ul {
     width: 100%;
     position: absolute;
     top: 13rem;
@@ -55,95 +71,110 @@ nav .ul{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+
 }
-.segundo_menu{
+
+.segundo_menu {
     position: absolute;
     top: 2rem;
     text-align: left;
-    left: 32rem; 
+    left: 32rem;
     list-style: none;
-    
+
 }
 
-.tercer_menu{
+.tercer_menu {
     position: absolute;
     top: 3.5rem;
     text-align: left;
-    left: 32rem; 
+    left: 32rem;
     list-style: none;
 }
-.li{
-     /* float: left;  */
+
+.li {
+    /* float: left;  */
     padding: 5px;
+    background-color: var(--coolor-de-fondo);
 }
-.li .a{
+
+.li .a {
     display: block;
     color: black;
     /* text-align: center; */
     text-decoration: none;
     /* width: 8.5rem;
     height: 2rem; */
-    
+    background-color: var(--coolor-de-fondo);
+
 
 }
 
-.li .a:hover{
+.li .a:hover {
     background-color: rgb(72, 71, 71);
     color: var(--coolor-de-fondo);
 }
 
-nav .primer_ul{
+nav .primer_ul {
     display: none;
     transition: all .3s;
+    background-color: var(--coolor-de-fondo);
 
 }
 
-nav .li .ul, .segundo_menu, .tercer_menu{
+nav .li .ul,
+.segundo_menu,
+.tercer_menu {
     display: none;
 
 }
 
-nav .li:hover >.segundo_menu {
+nav .li:hover>.segundo_menu {
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 
-nav .li:hover > .tercer_menu{
+nav .li:hover>.tercer_menu {
     display: flex;
     flex-direction: column;
 }
 
-.list_icon{
-    cursor:pointer
+.list_icon {
+    cursor: pointer
 }
 
-.menu_hamburguesa:checked + .ul{
+.menu_hamburguesa:checked+.ul {
     /* background-color: aqua; */
     display: flex;
 }
-a{
+
+a {
     padding: 3px;
 }
-section{
+
+section {
     display: flex;
-   
+
     color: black;
-    display: inline-block; 
-    
+    display: inline-block;
+
     width: 100%;
     align-self: center;
     padding: 5%;
+
 }
 
-section .info_imagen{
+section .info_imagen {
     display: flex;
     flex-direction: row;
-    
+
 }
-section h1{
+
+section h1 {
     font-size: 30px;
+    
 }
 
 
@@ -151,13 +182,15 @@ section h1{
    NO VA
     padding: 3rem;
 } */
-.sobre_mi div{
+.sobre_mi div {
     display: flex;
     flex-direction: row;
-    
+
 }
-.sobre_mi, .obras{
-    display: inline-block; 
+
+.sobre_mi,
+.obras {
+    display: inline-block;
     color: black;
     width: 100%;
     align-self: center;
@@ -166,7 +199,7 @@ section h1{
 }
 
 /* revisar */
-.sobre_mi p{
+.sobre_mi p {
 
     display: inline-block;
     width: 90%;
@@ -174,47 +207,52 @@ section h1{
     padding: 3rem 1rem 1rem 3rem;
 }
 
-.sobre_mi span{
+.sobre_mi span {
     font-size: 25px;
     padding: 1rem;
 }
-.galeria_fotos div{
+
+.galeria_fotos div {
     display: grid;
     grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
 
-     width: 80%; 
+    width: 80%;
     padding: 10%;
 }
-.galeria_fotos div div, .obras div div, .libro div{ 
-    
-width: 40rem;
-height: 40rem;
-background-color: white;
-margin: 1rem;
-padding: 1rem;
-color: black;
+
+.galeria_fotos div div,
+.obras div div,
+.libro div {
+
+    width: 40rem;
+    height: 40rem;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
 
 
 }
 
-.poesia div{
+.poesia div {
     display: flex;
 }
 
 .poesia span {
     font-size: 30px;
 }
-    
-.poesia div{
-   font-size: 20px; 
+
+.poesia div {
+    font-size: 20px;
 }
-.contacto img{
+
+.contacto img {
     padding: 5px;
     width: 3rem;
 }
 
-.caricatura{
+.caricatura {
     padding: 1rem;
     min-width: 5%;
     height: 5%;
@@ -226,94 +264,164 @@ color: black;
     
 } */
 
-.sobre_mi .titulos_subtitulos{
+.sobre_mi .titulos_subtitulos {
     display: flex;
- flex-direction: column;
- padding: 0 2rem;
- text-align: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
 
 }
-.ficha_tecnica{
-    
+
+.ficha_tecnica {
+
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    padding:  5rem 1rem;
-    
+    padding: 5rem 1rem;
+
 }
-.ficha_tecnica ul li{
-list-style: none;
-float: none;
+
+.ficha_tecnica ul li {
+    list-style: none;
+    float: none;
 
 }
 
 .ficha_tecnica ul li a {
     width: 100%;
-   height: 4rem;
-   text-align: justify;
-  text-decoration: underline;
-  color: black;
-  display: inline-block;
+    height: 4rem;
+    text-align: justify;
+    text-decoration: underline;
+    color: black;
+    display: inline-block;
 
-  padding: 2rem 0;
-}
-.ficha_tecnica h4{
-font-size: 20px;
-padding: 1rem;
+    padding: 2rem 0;
 }
 
+.ficha_tecnica h4 {
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.presentacion {
+    position: relative;
+    bottom: 2rem;
+}
 
 
-    @media (min-width: 900px) {
-        .label_hamburguesa {
-            display: none;
-        }
+
+@media (min-width: 900px) {
+    .label_hamburguesa {
+        display: none;
+    }
+
+    .header {       
+        align-items: flex-start;
+        
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: flex-start;
+      
+
+    }
+
+    nav .primer_ul {
+        display: flex;
+        flex-direction: row;
+         position: relative; 
+        
+        list-style: none;
+        padding: 1rem;
+        justify-content: right;
+         left: 10rem; 
+        /* top: 1rem; */
+        width: 50%;
+
+    }
+
+    header h1 {
+        font-size: 90px;
+        margin: 0;
+        /* position: relative; */
+        top: 7rem;
+
+    }
+
+    a {
+        padding: 1rem;
+    } 
+
+
+    .segundo_menu {
+        position: absolute;
+        top: 4.5rem;
+        left: 18rem;
+        z-index: 1;
+    }
+
+    .tercer_menu {
+        position: absolute;
+        top: 4.5rem;
+        left: 25.5rem;
+        z-index: 1;
+    }
+
+    .sobre_mi p {
+        display: inline-block;
+
+        color: black;
+        display: inline-block;
+
+        width: 40%;
+        align-self: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 18.5rem;
+       
+    } 
+
+    .caricatura {
+        width: 50%;
+        height: 50%;
+        align-items: center;
+        position: relative;
+        left: 20rem;
+    }
+
+    /* .presentacion{
+        display: flex;
+        position: relative;
+        top: 1rem;
+        right: 10rem;
+        overflow: hidden;
+    }
     
-        .header {
-            display: flex;
-            width: 100%;
-            align-items: flex-start;
-            
-        }
-    
-        .navbar {
-            
-            width: 100%;
-            justify-content: flex-start;
-            
-        }
-    
-        nav .primer_ul {
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            top: 1.5rem;
-            list-style: none;
-            padding: 1rem;
-            justify-content: right;
-            
-           
-        }
-    
-        header h1 {
-            font-size: 90px;
-            margin: 0;
-            position: relative;
-            top: 7rem;
-        }
+    .dibujo{
+        width: 40%;
+        height: 70%;
+    }
+     .bio{ 
+        
+        position: relative;
+        top: 4rem;
 
-a{
-   padding: 1rem; 
-}
+       
+    } 
 
-.segundo_menu{
-    top: 4.5rem;
-    left: 72.5rem;
-}
+    .span{
+        display: inline-block;
+        height: 1rem;
+    position: relative;   
+    top: 19rem;
+    right: 14rem;
 
-.tercer_menu{
-    top:4.5rem;
-    left: 80.5rem;
-}
+    }
+  */
+
+
 }
