@@ -351,8 +351,8 @@ h3{
     header h1 {
         font-size: 90px;
         margin: 0;
-        /* position: relative; */
-        top: 7rem;
+         position: relative; 
+        top: 4rem;
 
     }
 
@@ -403,20 +403,27 @@ h3{
     h3{
         font-weight: 600;
         font-size: 35px;
+        
     }
 
-    /* .presentacion{
-        display: flex;
-        position: relative;
-        top: 1rem;
-        right: 10rem;
-        overflow: hidden;
-    }
-    
     .dibujo{
         width: 40%;
         height: 70%;
     }
+    
+     .sobre_mi .bio{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .sobre_mi span{
+        position: relative;
+        left: 22rem;
+    }
+
+    /* 
+    
+    
      .bio{ 
         
         position: relative;
