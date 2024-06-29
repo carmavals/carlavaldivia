@@ -142,9 +142,14 @@ nav .li:hover>.tercer_menu {
 }
 
 .list_icon {
-    cursor: pointer
+    cursor: pointer;
+    
 }
 
+.label_hamburguesa{
+    position: relative;
+    right: 1rem;
+}
 .menu_hamburguesa:checked+.ul {
     /* background-color: aqua; */
     display: flex;
